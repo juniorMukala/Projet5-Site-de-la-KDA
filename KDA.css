@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+   background-image: url('/home/user/Desktop/Projets-KDA/Projets-KDA/Projet5: Site de la KDA/hero-background.jpg');
+   background-position: center;
+   
+   
+}
+
+img
+{
+    display: inline;
+    margin-top: 16px;
+    margin-left: 25px;
+
+}
+
+
+nav
+{
+    display: inline;
+    width: 740px;
+    text-align: end;
+       
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+nav li
+{
+    display: inline;
+    margin-right: 15px;
+    text-align: end;
+}
+   
+
+nav a
+{
+    font-size: 1.3em;
+    margin: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a: hover
+{
+    text-decoration: 2px red;
+}
+
+
+.Partie-centrale, .Partie-logo
+{
+
+    position: relative;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.Partie-centrale
+{
+    transform: translateY(120px);
+   
+}
+
+.Partie-logo 
+{
+    transform: translateY(250px);
+    color: 
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 72px;
+    color:white;
+    margin-bottom: 50px;
+}
+
+span
+{
+    color: yellow;
+}
+
+.Appel-KDA
+{
+    font-size: 20px;
+    color: white;
+}
+
+.boutton
+{
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding:20px 20px;
+    border-radius: 15px;
+    color: red;  
+    border: white 2px solid;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.boutton:hover
+{
+    background: transparent;
+    color: white;  
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+
+.Partie-logo figure img
+{
+    
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+}
