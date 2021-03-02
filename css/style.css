@@ -1,0 +1,644 @@
+*
+{
+    margin: 0px;  
+    padding: 0px;
+}
+
+#bloc-page
+{
+    height: 100%;   
+}
+
+header                                             /*Le header reste fixe quelque soit le defilement de la page de haut en bas*/
+{
+    height: 7vh;
+    background-color: #da2a50;
+    position: fixed;                         
+    width: 100%;
+    z-index: 1;                              
+}
+
+img
+{
+    display: inline;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+nav
+{
+    display: inline;
+    text-align: end;      
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin-top:-40px;
+}
+
+ul li
+{
+    display: inline;
+    text-align: end;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+}
+  
+nav a
+{
+    font-size: 18px;
+    margin: 15px;
+    color: white;   
+}
+
+nav a: hover
+{
+    text-decoration: 2px solid #fff;
+}
+
+
+
+/*DEBUT DE LA PREMIERE SECTION*/
+
+#premier-bloc
+{
+    background: url('../images/hero-background.jpg') no-repeat top; 
+    height: 100vh; 
+}
+
+.Partie-centrale, .Partie-logo
+{
+    position: relative;
+    justify-content: center;
+    text-align: center; 
+}
+
+.Partie-centrale
+{
+    transform: translateY(120px);  
+}
+
+.Partie-logo 
+{
+    transform: translateY(180px);  
+}
+
+.h1-premiere-section
+{
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    color:white;
+    margin-bottom: 4vh;;
+    font-weight: 900; 
+    font-family:'Montserrat', sans-serif; 
+}
+
+.h1-premiere-section span
+{
+    font-weight: 900;
+    color: yellow;
+}
+
+.Appel-KDA
+{
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boutton-bloc-1
+{
+    background-color: white;
+    color:  #da2a50;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding:20px 20px;
+    border-radius: 15px;  
+    border: white 2px solid;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.boutton:hover
+{
+    color: white; 
+    cursor:default; 
+}
+
+a
+{
+    text-decoration: none;
+    color:  #da2a50;
+}
+
+.boutton a:hover 
+{
+    color: white;
+    background: transparent;
+}
+
+.Partie-logo figure img
+{
+    width: 50px;
+    opacity: 0.5;
+    margin: 55px;  
+}
+
+/*FIN DE LA PREMIÈRE SECTION DE LA PAGE*/
+
+/*DEBUT DE LA SECONDE SECTION DE LA PAGE*/
+
+#deuxieme-bloc
+{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;        
+}
+
+.Partie-droite-deuxieme-bloc
+{ 
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.images
+{
+    display: flex;
+}
+
+.photo-texaf
+{ 
+    border-radius: 15px;
+    margin-left: -50px; 
+}
+
+.photo-apprenants
+{
+    margin-left: -360px;
+    margin-top: 270px;
+    border-radius: 15px;
+}
+
+.h1-deuxieme-bloc
+{
+   text-align: center;
+   font-size: 40px;
+   color: #424345;
+   margin-left: 40px;
+   font-family:'Montserrat', sans-serif;  
+}
+    
+.compartiment-2, .compartiment-3
+{
+    margin-top: 50px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.developpeurs-qualifies
+{
+    margin-right: 120px;
+    text-align: center;
+}
+
+.developpeurs-qualifies p
+{
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #424345;
+    font-weight: 700;
+    margin-top: 30px; 
+}
+
+
+/*FIN DE LA SECONDE SECTION*/
+
+
+/*DEBUT DE LA TROISIEME SECTION*/
+
+#troisieme-bloc
+{
+    flex-direction: row;
+    background-color: #da2a50;
+    text-align: center;   
+}
+
+.h2-troisieme-section
+{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 150px;
+    padding-top: 150px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.bloc-3-partenaires
+{
+    padding-bottom: 150px;
+}
+
+/*FIN DE LA TROISIEME SECTION*/
+
+
+/*DEBUT DE LA QUATRIEME SECTION*/
+
+.quatrieme-bloc
+{
+    background-color: #f1f0f3; 
+}
+
+.accompagnement-projet 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;   
+}
+
+h3
+{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    font-family:'Montserrat', sans-serif;
+    color:rgba(24,0,39,.87);
+}
+
+.realiser-projet
+{
+    width: 25%;
+    height: 230px;
+    background-color: #ffffff;
+    border: white 2px solid;
+    margin:15px;
+    margin-bottom: 120px;
+    padding:30px;
+    border-radius: 0 0 20px 20px;
+    border-top: 10px solid yellow;
+    font-family:'Montserrat', sans-serif;
+    font-size: 13px;   
+}
+
+.realiser-projet p
+{
+   font-size: 15px; 
+   text-align: center;
+}
+
+
+.h4-troisieme-bloc
+{
+    text-align: center;
+    font-size: 30px;
+    color:  #da2a50;
+    margin-bottom: 20px;
+    font-family:'Montserrat', sans-serif; 
+}
+
+
+.bouton-bloc-4
+{
+    background-color: #da2a50;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px; 
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    margin-top: 60px; 
+    margin-left:75px;
+    border: none;  
+}                       
+
+/*FIN DE LA QUATRIEME SECTION*/
+
+
+/*DEBUT DE LA CINQUIEME SECTION*/
+
+#cinquieme-bloc
+{
+    background-color:  #da2a50
+}
+
+.photo-cinquieme-bloc
+{
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 200px;
+    width: 55%;
+    margin: auto;   
+}
+
+.photo-cinquieme-bloc img
+{
+    width: 320px;
+    border-radius: 15px;  
+}
+
+.h2-cinquieme-bloc
+{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family:'Montserrat', sans-serif;
+}
+
+/*FIN DE LA CINQUIEME SECTION*/
+
+/*DEBUT DE LA SIXIEME SECTION*/
+
+
+.h2-sixieme-bloc
+{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.hard-soft-skills
+{
+    display: flex;
+    justify-content: center;
+     
+}
+
+.hardskills
+{
+    background-color:#f1f0f3;
+    width: 600px;
+    height: 400px; 
+    border-top: 50px solid red;
+}
+
+.softskills
+{
+    background-color:#f1f0f3;
+    width:500px;
+    margin-left: 20px;
+}
+    
+
+
+
+
+/*FIN DE LA SIXIEME SECTION*/
+
+
+/*DEBUT DE LA SEPTIEME SECTION*/
+
+#septieme-bloc
+{
+    background-color: #da2a50;   
+}
+
+.h2-septieme-section
+{
+    font-size: 40px;
+    text-align: center; 
+    padding-top: 70px;
+    margin-bottom: 50px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.icones-7
+{
+    display: flex;
+    justify-content: center;
+     
+}
+
+.bloc
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:50px;
+}
+
+
+.icone-fleche
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fleche 
+{
+    width: 40px;
+    height:20px;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+
+.icone
+{
+    width: 40px;
+    height:35px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
+
+
+.bouton-section-7
+{
+    text-align: center;  
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #da2a50;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+/*FIN DE LA SEPTIEME SECTION */
+
+
+/*DEBUT DE LA HUITIEME SECTION*/
+
+.partie-superieure, .partie-inferieure
+{
+    display: flex;
+    justify-content: center;     
+}
+
+
+#huitieme-section
+{
+    padding:100px 30px;
+    background-color:#f1f0f3;;
+    color: #424345;
+}
+
+
+.zone-de-texte
+{
+    width: 570px;
+    margin-right: 25px;      
+}
+
+.h2-huitieme-section 
+{
+    font-family:'Montserrat', sans-serif;
+    color: #424345;
+    margin-bottom: 10px; 
+    text-align: justify; 
+    margin-left: 15px;  
+}
+
+.zone-de-texte p, .zone-images p
+{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #424345;
+    margin-bottom: 10px; 
+    text-align: justify; 
+    margin-left: 15px;
+}
+
+.icones-8
+{
+    padding-top: 8px;
+    padding-right: 180px;
+}
+{
+    margin-left: 10px;
+}
+.partie-superieure, .zone-de-texte h1
+{
+    margin-bottom: 20px;
+}
+
+.zone-images
+{
+    display: flex;
+    width: 570px;
+    height: 300px;   
+}
+
+.carriere-kd
+{
+    width: 270px;
+    height: 300px; 
+    background-color: #ffffff;
+    margin-left: 25px;
+    border-radius: 20px; 
+    text-align: center;  
+}
+
+.h1-huitieme-section
+{
+    font-size: 40px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.h1-huitieme-section span
+{
+    color:  #da2a50;
+}
+
+/*DEBUT DE LA NEUVIEME SECTION*/
+
+#sectio-10
+{
+    background-color: #000;
+}
+
+.h1-neuvieme-section
+{
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.logo-neuvieme-section
+{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.logo-neuvieme-section img
+{
+    margin: 40px;
+}
+/*FIN DE LA NEUVIEME SECTION*/
+
+
+/*DEBUT DE LA DIXIEME SECTION*/
+
+.h1-dixieme-section
+{
+    font-family:'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #424345;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+.Grands-sponsors
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Grands-sponsors img
+{
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+
+.Paragraphe-10 p
+{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #424345;    
+}
+/*FIN DE LA DIXIEME SECTION*/
+
+
+/*DEBUT DE LA ONZIEME SECTION*/
+
+#section-11
+{
+    display: flex;
+   justify-content: center;
+}
+
+.partie-gauche
+{
+    margin-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+p
+{
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
