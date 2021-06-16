@@ -1,95 +1,130 @@
-*
-{
+
+*{
     margin: 0px;  
     padding: 0px;
 }
 
-#bloc-page
-{
-    height: 100%;   
+@font-face {
+	font-family: MontserratBlack;
+  	src: url(Montserrat/Montserrat-Black.ttf);
 }
 
-header                                             /*Le header reste fixe quelque soit le defilement de la page de haut en bas*/
-{
-    height: 7vh;
-    background-color: #da2a50;
-    position: fixed;                         
+@font-face {
+	font-family: MontserratRegular;
+  	src: url(Montserrat/Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: MontserratBold;
+  	src: url(Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoRegular;
+  	src: url(Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+  	src: url(Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: UbuntuMonoRegular;
+  	src: url(Ubuntu_Mono/UbuntuMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: UbuntuMonoBold;
+  	src: url(Ubuntu_Mono/UbuntuMono-Bold.ttf);
+}
+
+/*HEADER*/
+
+
+html, body{
     width: 100%;
-    z-index: 1;                              
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-img
-{
-    display: inline;
-    margin-top: 10px;
-    margin-left: 15px;
+.header{
+    border-bottom: 1px solid #eaeaeb;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+   
+    /* background-color: #da2a50; */
+    
+    
 }
-
-nav
-{
-    display: inline;
-    text-align: end;      
+.menu{
+    margin: 0 30px 0 0;
 }
-
-nav ul
-{
-    list-style-type: none;
-    margin-top:-40px;
+.menu a { 
+    clear: right;
+    text-decoration: none;
+    color: blue;
+    margin:0 10px ;
+    line-height: 70px;
 }
-
-ul li
-{
-    display: inline;
-    text-align: end;
-    font-family:'Roboto', sans-serif;
-    font-weight: 900;
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 30px;
+    display: none;
+    width: 26px;
+    float: right;
 }
-  
-nav a
-{
-    font-size: 18px;
-    margin: 15px;
-    color: white;   
-}
-
-nav a: hover
-{
-    text-decoration: 2px solid #fff;
+#toggle{
+    display: none;
 }
 
 
+@media only screen and (max-width: 1138px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none; 
 
-/*DEBUT DE LA PREMIERE SECTION*/
+    }
+    .menu a {
+       display: block;
+       border-bottom: 1px solid #eaeaeb;
+       margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+    #emploi-les-deux-parties{
+    justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/*PREMIERE SECTION*/
 
 #premier-bloc
 {
-    background: url('../images/hero-background.jpg') no-repeat top; 
+    background-image:url(/home/user/Desktop/Codes/Prairie/Site-KDA/fichiers/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh; 
-}
-
-.Partie-centrale, .Partie-logo
-{
-    position: relative;
-    justify-content: center;
-    text-align: center; 
-}
-
-.Partie-centrale
-{
-    transform: translateY(120px);  
-}
-
-.Partie-logo 
-{
-    transform: translateY(180px);  
 }
 
 .h1-premiere-section
 {
     text-transform: uppercase;
+    font-family: MontserratBlack;
     font-size: 5.5vw;
     color:white;
-    margin-bottom: 4vh;;
+    margin-bottom: 8vh;;
     font-weight: 900; 
     font-family:'Montserrat', sans-serif; 
 }
@@ -100,14 +135,22 @@ nav a: hover
     color: yellow;
 }
 
-.Appel-KDA
+.Partie-centrale, .Partie-logo
 {
-    font-size: 20px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    transform: translateY(180px);   
 }
 
-.boutton-bloc-1
+.Offre-KDA
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    transform: translateY(-75px);
+}
+
+.Partie-centrale button
 {
     background-color: white;
     color:  #da2a50;
@@ -117,49 +160,47 @@ nav a: hover
     padding:20px 20px;
     border-radius: 15px;  
     border: white 2px solid;
-    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 50px;
+    transform: translateY(-50px);
+}   
+
+.Partie-centrale button:hover
+{
+    background:none;
+    color: #fff;
+    border:2px solid #fff;
 }
 
-.boutton:hover
+.Partie-centrale button a
 {
-    color: white; 
-    cursor:default; 
-}
-
-a
-{
-    text-decoration: none;
     color:  #da2a50;
+    text-decoration: none;
 }
 
-.boutton a:hover 
+.Partie-centrale button a:hover
 {
-    color: white;
-    background: transparent;
+    color: #fff;
 }
 
-.Partie-logo figure img
+.Partie-logo img
 {
     width: 50px;
     opacity: 0.5;
-    margin: 55px;  
+    margin: 55px;
+    transform: translateY(-30px);  
 }
 
-/*FIN DE LA PREMIÈRE SECTION DE LA PAGE*/
+/*SECONDE SECTION*/
 
-/*DEBUT DE LA SECONDE SECTION DE LA PAGE*/
-
-#deuxieme-bloc
-{
+#deuxieme-bloc{
     display: flex;
     margin-top: 100px;
     margin-bottom: 100px;        
 }
 
-.Partie-droite-deuxieme-bloc
-{ 
-   width: 100%;
+.Partie-droite-deuxieme-bloc{ 
+   
    display: flex;
    flex-direction: column;
 }
@@ -184,10 +225,10 @@ a
 
 .h1-deuxieme-bloc
 {
-   text-align: center;
+   text-align: justify;
    font-size: 40px;
    color: #424345;
-   margin-left: 40px;
+   margin-left: 100px;
    font-family:'Montserrat', sans-serif;  
 }
     
@@ -211,9 +252,15 @@ a
     font-size: 20px;
     color: #424345;
     font-weight: 700;
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
+
+.developpeurs-qualifies img
+{
+    transform: translateY(-20px);
+   
+}
 
 /*FIN DE LA SECONDE SECTION*/
 
@@ -231,16 +278,39 @@ a
 {
     text-align: center;
     color: #fff;
-    font-size: 50px;
-    margin-bottom: 150px;
+    font-size: 40px;
+    margin-bottom: 50px;
     padding-top: 150px;
     font-family:'Montserrat', sans-serif;
 }
 
-.bloc-3-partenaires
-{
+.bloc-3-partenaires{
     padding-bottom: 150px;
-}
+    width: 70%;
+    background-color: #F1F0F3;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;  
+    
+  }
+.list-partenaires{
+    width:200%;
+    
+  }
+/*   
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+  
+
 
 /*FIN DE LA TROISIEME SECTION*/
 
@@ -272,6 +342,7 @@ h3
 {
     width: 25%;
     height: 230px;
+    position: relative;
     background-color: #ffffff;
     border: white 2px solid;
     margin:15px;
@@ -300,7 +371,7 @@ h3
 }
 
 
-.bouton-bloc-4
+.realiser-projet button
 {
     background-color: #da2a50;
     color: white;
@@ -312,41 +383,31 @@ h3
     margin-top: 60px; 
     margin-left:75px;
     border: none;  
-}                       
+}   
+
+.realiser-projet button:hover
+{
+    background: #fff;
+    border: 2px solid  #da2a50;
+    color: #da2a50;
+
+}
 
 /*FIN DE LA QUATRIEME SECTION*/
 
 
 /*DEBUT DE LA CINQUIEME SECTION*/
 
-#cinquieme-bloc
-{
-    background-color:  #da2a50
+#bloc5{
+    background-color: #da2a50;
 }
 
-.photo-cinquieme-bloc
-{
-    display: flex;
-    overflow: hidden;
-    padding-bottom: 200px;
-    width: 55%;
-    margin: auto;   
-}
-
-.photo-cinquieme-bloc img
-{
-    width: 320px;
-    border-radius: 15px;  
-}
-
-.h2-cinquieme-bloc
-{
+#titre_bloc_5_page_1{
     text-align: center;
-    font-size: 40px;
-    color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    font-family:'Montserrat', sans-serif;
+    margin-top: 100px;
+}
+#wrapper{
+    display: flex;
 }
 
 /*FIN DE LA CINQUIEME SECTION*/
@@ -354,40 +415,109 @@ h3
 /*DEBUT DE LA SIXIEME SECTION*/
 
 
-.h2-sixieme-bloc
+#bloc6
 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 70px;
-    padding-bottom: 50px;
-    font-family:'Montserrat', sans-serif;
-}
-
-.hard-soft-skills
-{
+    background-color: white;
     display: flex;
-    justify-content: center;
-     
-}
+    justify-content:space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 150px;
 
-.hardskills
-{
-    background-color:#f1f0f3;
-    width: 600px;
-    height: 400px; 
-    border-top: 50px solid red;
 }
-
-.softskills
+#titre_bloc_6
 {
-    background-color:#f1f0f3;
-    width:500px;
-    margin-left: 20px;
-}
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #424345;
     
+    text-align: center;    
+}
+#bloc_hardskills
+{
+    height: 420px;
+   
+    background-color: #F1F0F3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
 
-
-
+}
+#titre_hardskills, #titre_softskills
+{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    background-color: #EE4A5A;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#titre_softskills
+{
+    background-color: #332040;
+}
+.expertise
+{
+    height: 80px;
+    width: 40px;
+}
+#conteneur_expertise
+{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chaque_expertise
+{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#bloc_softskills
+{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 470px;
+    background-color: #F1F0F3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    top: 19%;
+   
+}
+ol
+{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20.8px;
+    font-weight: 400;
+    line-height: 31.2px;
+    width: 260px;
+}
+#conteneur_list
+{
+    background-color: #DFDEE1;
+    height: 280px;
+    width: 380px;
+    position: relative;
+    top: 5%;
+    left: 9%;
+    border-radius: 5%;
+}
 
 /*FIN DE LA SIXIEME SECTION*/
 
@@ -396,7 +526,7 @@ h3
 
 #septieme-bloc
 {
-    background-color: #da2a50;   
+    background-color:#b93552;   
 }
 
 .h2-septieme-section
@@ -404,22 +534,22 @@ h3
     font-size: 40px;
     text-align: center; 
     padding-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family:'Montserrat', sans-serif;
+    color: #fff;
 }
 
 .icones-7
 {
     display: flex;
     justify-content: center;
-     
+    margin: auto;  
 }
 
 .bloc
  {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     margin:50px;
 }
@@ -428,8 +558,7 @@ h3
 .icone-fleche
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;  
 }
 
 
@@ -443,27 +572,44 @@ h3
 
 .icone
 {
-    width: 40px;
-    height:35px;
+    width: 50px;
+    height:45px;
     border: solid 1px #fff;
     border-radius: 10px;
     padding: 15px 15px;
 }
 
-
-.bouton-section-7
+.bloc p
 {
-    text-align: center;  
-    text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 900;
+    font-size: 22px;
+}
+.button-plannifier-appel{
+    text-align: center;
+}
+.button-plannifier-appel button
+{
     background-color: #da2a50;
-    color: white;
-    text-transform: uppercase;
-    padding: 20px 20px;
-    font-size: 20px;
     border-radius: 15px;
     border: none;
+    padding: 20px 20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 80px;   
+}
+
+#septieme-bloc button:hover
+{
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
 }
 
 /*FIN DE LA SEPTIEME SECTION */
@@ -480,7 +626,7 @@ h3
 
 #huitieme-section
 {
-    padding:100px 30px;
+    padding:100px;
     background-color:#f1f0f3;;
     color: #424345;
 }
@@ -490,6 +636,10 @@ h3
 {
     width: 570px;
     margin-right: 25px;      
+}
+.zone-de-texte img
+{
+    transform: translateY(-20px);
 }
 
 .h2-huitieme-section 
@@ -511,14 +661,18 @@ h3
     margin-left: 15px;
 }
 
+.zone-de-texte p
+{
+    transform: translateY(40px);
+    margin-left: 5px;
+}
+
 .icones-8
 {
     padding-top: 8px;
     padding-right: 180px;
 }
-{
-    margin-left: 10px;
-}
+
 .partie-superieure, .zone-de-texte h1
 {
     margin-bottom: 20px;
@@ -537,6 +691,7 @@ h3
     height: 300px; 
     background-color: #ffffff;
     margin-left: 25px;
+    padding-right: 10px;
     border-radius: 20px; 
     text-align: center;  
 }
@@ -597,6 +752,7 @@ h3
 {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .Grands-sponsors img
@@ -605,40 +761,195 @@ h3
     border-radius: 10px;
     margin-right: 20px; 
 }
+.Grands-sponsors p {
+    transform: translateX(15px);
+}
+.Grands-sponsors span{
+    font-weight: bold;
+}
 
-.Paragraphe-10 p
+
+.evenements
 {
     font-family:'Montserrat', sans-serif;
     font-size: 15px;
-    color: #424345;    
+    color: #424345;
+    
 }
-/*FIN DE LA DIXIEME SECTION*/
-
-
-/*DEBUT DE LA ONZIEME SECTION*/
-
-#section-11
-{
+.photo-quadruple{
     display: flex;
-   justify-content: center;
+    justify-content: center;
+    
+}
+.quadruple > .twitter-tweet{
+    width: 300px;
+    text-align: center;
+   
 }
 
-.partie-gauche
+
+/*ONZIEME SECTION*/
+
+#bloc11
 {
+    background-color: #1d1b24;
+    color: #fff;
+}
+.titre-bloc11{
+    font-family:'Montserrat', sans-serif;
+    font-size: 48px;
+    color:#e2e1e3;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px 
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+   
+}
+.double-champ{
+    text-align: center;
+}
+.taille-label{
+    width: 555px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.taille-vaste-champ{
+    width: 1150px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.customers-choice{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.last-customers-choice{
+    transform: translateX(-27.8%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 64%;
+   margin-left: 18%;
+   
+}
+.footer11{
+  margin-left: 18.6%;
+  margin-top: 20px;
+  font-family:'Montserrat', sans-serif;
+}
+.footer11 p{
+  margin-bottom: 5px;
+}
+.span11
+{
+    color:#e8224f
+}
+.footer11 button{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: #e8224f;
+    color: #fff;
+    border:none
+}
+
+/*DOUZIEME SECTION*/
+
+#section-11{                            /*Partie-gauche*/
+   display: flex;
+   justify-content: center;
+   background-color: #2d2d2d;
+   padding-top: 150px;
+   padding-bottom: 100px; 
+}
+
+.partie-gauche{
     margin-right: 40px;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 19%;
 }
 
-p
-{
+.partie-gauche p{
+    margin-bottom: 10px;
+}
+
+.address-electronique{
+    margin-top: 40px;
+}
+
+.address-electronique a{
+    color: #da2a50;
+}
+
+.partie-droite{
+    margin-right: 19%;
+}
+.formulaire-mono-ligne{                  /*Partie droite*/
+    display: flex;
+}
+.Acces-formulaire-mono-ligne {
     font-family:'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.span12{
+    font-weight: 700;
+}
+.Adresse input{
+    width: 420px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #fff;
+    padding-left: 15px;
+    border: none;
+}
+.inscription input{
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    border-radius:0 15px 15px 0;
+    border: none;
+    background-color:  #da2a50;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.footer12{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transform: translateY(200px);
 }
 
+/*DEUXIEME PAGE*/
 
 
 
-
-
-
+@media only screen and (max-width:1130px){
+    #bloc6{
+        display: inline-block;
+    }
+    .icones-7{
+        display: inline;
+    }
+}

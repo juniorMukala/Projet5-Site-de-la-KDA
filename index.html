@@ -1,594 +1,614 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-5">
-    <title>site de la KDA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-      
-<body>
-   
-     <div id="bloc-page"><!--DEBUT DE LA PAGE ENTIERE-->
-
-           <header><!--ENTETE DE LA PAGE QUI SERA FIXE-->
-
-                <div id="partie-principale">
-                    <img src="images/logo_kinshasa_digital-white.png" alt="logo de la KDA" width="100" height="70">  
-                </div>
-   
-                <nav>
-                    <ul>
-                        <li><a href="http://kinshasadigital.com">Accueil</a></li>
-                        <li><a href="http://kinshasadigital.com">Academy</a></li>
-                        <li><a href="http://kinshasadigital.com">Emploi</a></li>
-                        <li><a href="http://kinshasadigital.com">Contact</a></li>
-                    </ul>
-
-                </nav>
-
+    <head>
+        <meta charset="UTF-5">
+        <title>site de la KDA</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>    
+    <body>
+         <div id="bloc-page"><!--DEBUT DE LA PAGE ENTIERE-->
+            <header class="header">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <menu class="menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="#">Academy</a>
+                    <a href="pages/emploi.html">Emplois</a>
+                    <a href="#">Contact</a>
+                </menu>
             </header>
-
-            <!--DEBUT DE LA PREMIERE SECTION-->
-
-            <section id="premier-bloc"> 
-
-                    <div class="Partie-centrale">
-
-                        <h1 class="h1-premiere-section">
-
-                            Besoin de 
-                            <br>
-                            développeurs 
-                            <br>
-                            <span>&lt;qualifiés&gt;?</span>
-                        
-                        </h1>
-                                    
-                        <p>
-                            
-                        <button class="boutton-bloc-1"><a href="https://calendly.com/thomasstrouvens/kinshasadigital">PLANIFIER UN APPEL</a></button>
-                        <button class="boutton-bloc-1">DEMANDER UN DEVIS</button>
-
-                        </p>
-                        
-                        <p  class="Appel-KDA">Des Développeurs experimentés pret à rejoindre votre équipe en full remote et avec les
-                            <br> 
-                            compétences dont vous avez besoin.</p>
-
-                    </div>
-
-
-
-                    <div class="Partie-logo">
-
-                        <figure>
-
-
-                            <img src="images/nodejs.png" alt="logo_du_nodejs">
-                            <img src="images/react.png" alt="logo_de_react">
-                            <img src="images/vuejs.png" alt="logo_de_vuejs">
-                            <img src="images/laravel.png" alt="logo_de_laravel">
-                            <img src="images/mysql.png" alt="logo_de_mysql">
-                            <img src="images/mongodb.png" alt="logo_de_mongodb">
-                            <img src="images/neo4j.png" alt="logo_de_neo4">
-                            <img src="images/graphql.png" alt="logo_de_graphql">
-
-                        </figure>
-
-                    </div>
-
-            </section> 
-            
-            <!--FIN DE LA PREMIERE SECTION-->
-
-            <!--DEBUT DE LA SECONDE SECTION DE LA PAGE-->
-
-            <section>
-
-                <div id="deuxieme-bloc">
-
-                        <div class="partie-gauche-deuxieme-bloc">
-
-                            <div class="images">
-                                    <p><img class="photo-texaf" src="images/texaf_campus.jpg" alt="texaf_campus" width="700px" height="525px"></p>
-                                    <p><img class="photo-apprenants" src="images/kda_cohorte_2020.jpg" alt="cohorete-2020" width="400px" height="300px"></p>
-                            </div>
-
-                        </div>
-
-               
-                       <div class="Partie-droite-deuxieme-bloc" width="1057.57" height="562.5">
-                           
-
-                                    
-                                    <h1 class="h1-deuxieme-bloc">Des développeurs <span>&lt;qualifiés&gt;</span> et prêts à intégrer 
-                                            <br> vos équipes en remote !</h1>  
-                                    
-                                    <div class="compartiment-2">
-
-                                            <div class="developpeurs-qualifies">
-
-                                                <p><img src="images/paper.svg" alt="meilleurs-developpeurs" width="55px" height="65px"></p>
-                                                <p>Des développeurs qualifiés</p>
-                                                    
-                                            </div>
-
-                                            <div class="developpeurs-qualifies">
-
-                                                <p><img src="images/cup.svg" alt="bon prix" width="55px" height="65px"></p>
-                                                <p>Des prix compétitifs</p>
-
-                                            </div>
-                                        
-                                    </div>
-                                  
-                                    <div class="compartiment-3">
-
-                                            <div class="developpeurs-qualifies">
-
-                                            <p><img src="images/chat.svg" alt="langue-officielle" width="55px" height="65px"></p>
-                                            <p>Le français est la langue maternelle</p>
-
-                                            </div>
-                                        
-
-                                            <div class="developpeurs-qualifies">
-
-                                            <p><img src="images/earth.svg" alt="GMT" width="55px" height="65px"></p>
-                                            <p>Sur le même fuseau horaire</p>
-                
-                                            </div>
-
-                                    </div>
-
-                        </div>
-                                        
+            <section id="premier-bloc">  <!--DEBUT DE LA PREMIERE SECTION-->
+                <div class="Partie-centrale">
+                    <h1 class="h1-premiere-section">Besoin de<br>développeurs <br><span>&lt;qualifiés&gt;?</span></h1>
+                    <p>    
+                       <button><a href="https://calendly.com/thomasstrouvens/kinshasadigital">PLANIFIER UN APPEL</a></button>
+                       <button>DEMANDER UN DEVIS</button>
+                    </p>                       
+                    <p class="Offre-KDA">Des Développeurs experimentés pret à rejoindre votre équipe en full remote et avec les<br>compétences dont vous avez besoin.</p>
                 </div>
-
-                     
-            </section> 
-            
-            <!--FIN DE LA SECONDE SECTION DE LA PAGE-->
-
-            
-            <!-- DEBUT DE LA TROISIEME SECTION DE LA PAGE-->
-
+                <div class="Partie-logo">
+                    <img src="Fichiers/technos/nodejs.png" alt="logo_du_nodejs" >
+                    <img src="Fichiers/technos/react.png" alt="logo_de_react">
+                    <img src="Fichiers/technos/vuejs.png" alt="logo_de_vuejs">
+                    <img src="Fichiers/technos/laravel.png" alt="logo_de_laravel">
+                    <img src="Fichiers/technos/mysql.png" alt="logo_de_mysql">
+                    <img src="Fichiers/technos/mongodb.png" alt="logo_de_mongodb">
+                    <img src="Fichiers/technos/neo4j.png" alt="logo_de_neo4">
+                    <img src="Fichiers/technos/graphql.png" alt="logo_de_graphql">
+                </div>
+            </section>  <!--FIN DE LA PREMIERE SECTION ET DEBUT DE LA SECONDE-->
             <section>
-
-                        <div id="troisieme-bloc">
-
-                                <h2 class="h2-troisieme-section">Nous avons le plaisir de travailler avec</h2>
-
-                                <div class="bloc-3-partenaires">
-
-                                    <img src="images/orange-white.png" alt="logo-orange" width="120px" height="110px">
-                                    <img src="images/deloitte-white.png" alt="logo-deloitte" width="120px" height="35px">
-                                    <img src="images/embassade-france-white.png" alt="logo-ambassade-france" width="150px" height="80px">
-                                    <img src="images/digitalafr-w.png" alt="logo-digitalafr" width="150px" height="70px">
-                                    <img src="images/elan_rdc.png" alt="logo-elan-rdc" width="100px" height="70px">
-                                    <img src="images/banquemondiale.png" alt="logo-banque-mondiale" width="150px" height="50px">
-                                    <img src="images/bcdc-grey.png" alt="logo-bcdc" width="80px" height="50px">
-                                    <img src="images/ey-white-2.png" alt="logo-ey-white-2" width="100" height="50">
-                                    <img src="images/facebook-white.png" alt="logo-facebook" width="150px" height="50px">
-                                    <img src="images/giz-w.png" alt="logo-giz-w" width="200px" height="70px">
-                                    <img src="images/graphql.png" alt="logo-graphql" width="120px" height="60px">
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-
-                                </div>
-                            
+                <div id="deuxieme-bloc">
+                    <div class="partie-gauche-deuxieme-bloc">
+                        <div class="images">
+                            <p><img class="photo-texaf" src="images/texaf_campus.jpg" alt="texaf_campus" width="700px" height="525px"></p>
+                            <p><img class="photo-apprenants" src="images/kda_cohorte_2020.jpg" alt="cohorete-2020" width="400px" height="300px"></p>
                         </div>
-                      
-            </section>
-            
-            <!--FIN DE LA TROISIEME SECTION-->
-            
-            <!--DEBUT DE LA QUATRIEME SECTION DE LA PAGE-->
-
-            <section>
-
-                        <div class="quatrieme-bloc">
-
-                                  <h3>Nous accompagnons vos projets</h3>
-
-                                  <div class="accompagnement-projet">
-                                            
-                                            
-                                            <div class="realiser-projet">
-
-                                                    <h4 class= "h4-troisieme-bloc">&gt;Réaliser votre projet</h4>
-                                                    <p>Engagez une équipe de développeurs de Kinshasa Digital à 
-                                                    <br> prix fixe pour livrer un produit final.</p>
-                                                    
-                                                    <button class="bouton-bloc-4">demander maintenant</button>
-
-                                            </div>
-
-                                            <div class="realiser-projet">
-
-                                                    <h4 class="h4-troisieme-bloc">&gt;Integrer votre équipe</h4>
-                                                    <p>Engagez un ou plusieurs développeurs de Kinshasa Digital à 
-                                                    <br> prix compétitifs pour rejoindre votre équipe à distance.</p>
-
-                                                    <button class="bouton-bloc-4">engager un developpeur</button>
-
-                                            </div>
-
-                                  </div>
-                                  
-                        </div>
-
-            </section>
-            
-            <!--FIN DE LA QUATRIEME SECTION DE LA PAGE-->
-
-
-            <!--DEBUT DE LA CINQUIEME SECTION DE LA PAGE-->
-
-            <section>
-                     
-                     <div id="cinquieme-bloc">
-
-                            <h2 class="h2-cinquieme-bloc">Ce que nous avons développé</h2>
-
-                            <div class="photo-cinquieme-bloc">
-                                   
-                                   <div>
-
-                                        <img src="images/works/ADS.png" alt="">
-
-                                   </div>
-                                        
-                                        <img src="images/works/cofed.png" alt="">
-
-                                   <div>
-                                       
-                                        <img src="images/works/companyleagues.png" alt="">
-                                       
-                                   </div>
-
-                                        <img src="images/works/covid-dashboard.png" alt="">
-
-                                   <div>
-
-                                        <img src="images/works/digitalafrica.png" alt="">
-                                       
-                                   </div>
-
-                                         <img src="images/works/elan.png" alt="">
-
-                                   <div>
-
-                                         <img src="/home/user/images (1)/images/works/jaunecongo.png" alt="">
-                                       
-                                   </div>
-
-                                         <img src="images/works/resilientdigitalafrica.png" alt="">
-
-                                   <div>
-
-                                         <img src="images/works/tandem.png" alt="">
-                                        
-                                   </div>
-
-                                   
+                    </div>
+                    <div class="Partie-droite-deuxieme-bloc">          
+                        <h1 class="h1-deuxieme-bloc">Des développeurs<span>&lt;qualifiés&gt;</span>et prêts à intégrer<br>vos équipes en remote !</h1>     
+                        <div class="compartiment-2">
+                            <div class="developpeurs-qualifies">
+                                <p><img src="Fichiers/illustrations/paper.svg" alt="meilleurs-developpeurs" width="55px" height="65px"></p>
+                                <p>Des développeurs qualifiés</p>                
                             </div>
+                            <div class="developpeurs-qualifies">
+                                <p><img src="Fichiers/illustrations/cup.svg" alt="bon prix" width="55px" height="65px"></p>
+                                <p>Des prix compétitifs</p>
+                            </div>         
+                        </div>   
+                        <div class="compartiment-3">
+                            <div class="developpeurs-qualifies">
+                                <p><img src="Fichiers/illustrations/chat.svg" alt="langue-officielle" width="55px" height="65px"></p>
+                                <p>Le français est la langue maternelle</p>
+                            </div>
+                            <div class="developpeurs-qualifies">
+                                <p><img src="Fichiers/illustrations/earth.svg" alt="GMT" width="55px" height="65px"></p>
+                                <p>Sur le même fuseau horaire</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>                   
+            </div>        
+            </section><!-- DEBUT DE LA TROISIEME SECTION DE LA PAGE-->
+            <section>
+                <!-- <div id="troisieme-bloc">
+                    <h2 class="h2-troisieme-section">Nous avons le plaisir de travailler avec</h2>
+                    <div class="list-partenaires">
+                        <div class="bloc-3-partenaires">
+                            <img src="images/orange-white.png" alt="logo-orange" width="100px" >
+                            <img src="images/deloitte-white.png" alt="logo-deloitte" width="150px">
+                            <img src="images/embassade-france-white.png" alt="logo-ambassade-france" width="150px">
+                            <img src="images/digitalafr-w.png" alt="logo-digitalafr" width="100px">
+                            <img src="images/elan_rdc.png" alt="logo-elan-rdc" width="150px">
+                            <img src="images/banquemondiale.png" alt="logo-banque-mondiale" width="200px">
+                            <img src="images/bcdc-grey.png" alt="logo-bcdc" width="100px">
+                            <img src="images/ey-white-2.png" alt="logo-ey-white-2" width="100">
+                            <img src="images/facebook-white.png" alt="logo-facebook" width="200px">
+                            <img src="images/giz-w.png" alt="logo-giz-w" width="300px">
+                            <img src="images/graphql.png" alt="logo-graphql" width="60px">
+                        </div>      
+                    </div>                    
+                </div>          -->
+            </section><!--DEBUT DE LA QUATRIEME SECTION DE LA PAGE-->
+            <section>
+                <div class="quatrieme-bloc">
+                    <h3>Nous accompagnons vos projets</h3>
+                    <div class="accompagnement-projet">        
+                        <div class="realiser-projet">
+                            <h4 class= "h4-troisieme-bloc">&gt; Réaliser votre projet</h4>
+                            <p>Engagez une équipe de développeurs de Kinshasa Digital à<br> prix fixe pour livrer un produit final.</p>
+                            <button class="bouton-bloc-4">demander maintenant</button>
+                        </div>
+                        <div class="realiser-projet">
+                            <h4 class="h4-troisieme-bloc">&gt; Integrer votre équipe</h4>
+                            <p>Engagez un ou plusieurs développeurs de Kinshasa Digital à <br> prix compétitifs pour rejoindre votre équipe à distance.</p>
+                            <button class="bouton-bloc-4">engager un developpeur</button>
+                        </div>
+                    </div>             
+                </div>
+            </section><!--FIN DE LA QUATRIEME SECTION DE LA PAGE--><!--DEBUT DE LA CINQUIEME SECTION DE LA PAGE-->
+            <section>
+            <div id="bloc5"> 
+                <h1 id="titre_bloc_5_page_1">Ce que nous avons développé</h1>
+            <div id="wrapper">
+                <div class="client_bloc_5">
+                    <img src="images/covid-dashboard.png" alt="client_rdc" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Ministère de la santé</p>
+                            <div id="conteneur_logordc_bloc_5">
+                                <img src="images/icone_rdc_2.png" alt="logo_rdc" class="logo_client_bloc_5"><span id="intitule_logordc">RDC</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5"><img src="Ressources/vuejs.png" alt="vuejs_logo" class="logo_technologie_pour_client">Vue.Js
+                            <img src="images/laravel.png" alt="laravel_logo" class="logo_technologie_pour_client">laravel/Apache Chart.Js php Mapbox</span>
+                        </div>
+                    </div>
 
-                     </div>
-
-            </section>
-            
-            <!--FIN DE LA CINQUIEME SECTION DE LA PAGE-->
-
-
-            <!--DEBUT DE LA SIXIEME SECTION DE LA PAGE--> 
-
+                <div class="client_bloc_5">
+                    <img src="images/tandem.png" alt="client_tandem" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Tandem Advertising<br/>
+                            <a href="http://tandemadvertising.com" class="site_client">Site : https://tandemadvertising.com</a></p>
+                            <div id="conteneur_logotandem">
+                                <img src="Ressources/icone_suisse_2.png" alt="logo_suisse" class="logo_client_bloc_5"><span id="intitule_logosuisse">SUISSE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Wordpress - (custom - theme)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/companyleagues.png" alt="client_companyleagues" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/ADS.png" alt="client_companyADS" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company ADS<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/elan.png" alt="client_elan" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/jaunecongo.png" alt="client_jaunecongo" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/resilientdigitalafrica.png" alt="logo-resilientdigitalafrica" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/digitalafrica.png" alt="client_digitalafrica" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="client_bloc_5">
+                    <img src="images/cofed.png" alt="client_cofed" class="image_client">
+                    <div>
+                        <div class="conteneur_client_logo">
+                            <p class="paragraphe_bloc_5">Client: Company Leagues<br/>
+                            <a href="http://companyleagues.be" class="site_client">Site : https://companyleagues.be</a></p>
+                            <div id="conteneur_logocompany">
+                                <img src="images/icone_belgique.png" alt="logo_belgique" class="logo_client_bloc_5">
+                                <span id="intitule_logobelge">BELGIQUE</span>
+                            </div>
+                        </div>
+                        <div class="technologie_pour_client">
+                            <span class="text_technologie_bloc_5">Elementor Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>  <!--FIN DE LA CINQUIEME SECTION DE LA PAGE--> <!--DEBUT DE LA SIXIEME SECTION DE LA PAGE--> 
             <section>  
-
-                      <div id="sixieme-bloc">
-
-                             <h2 class="h2-sixieme-bloc">Notre expertise</h2>
-
-                             <div class="hard-soft-skills">
-
-                                    <div class="hardskills">
-
-                                           <h4 class="h4-sixieme-bloc">Hardskills</h4>
-
-
-                                            <div class="logo-hardskills">
-
-                                                    <div class="logo-hardskills-1">
-
-                                                            <img src="" alt="">
-
-                                                            <img src="" alt="">
-
-                                                            <img src="" alt="">
-
-                                                            <img src="images/laravel.png" alt="">
-
-                                                    </div>
-
-                                                    <div class="logo-hardskills-2">
-
-                                                            <img src="images/nodejs.png" alt="logo-nodejs" width="50px" height="60px">
-
-                                                            <img src="" alt="" width="50px" height="60px">
-
-                                                            <img src="images/vuejs.png" alt="logo-vuejs" width="50px" height="60px">
-
-                                                            <img src="images/react.png" alt="logo-react" width="50px" height="60px">
-
-                                                    </div>
-
-                                                    <div class="logo-hardskills-3">
-                                                        
-                                                            <img src="images/mysql.png" alt="logo-mysql" width="50px" height="60px">
-
-                                                            <img src="images/mongodb.png" alt="logo-mongodb" width="50px" height="60px">
-
-                                                            <img src="images/neo4j.png" alt="logo-neo4j" width="50px" height="60px">
-
-                                                            <img src="images/graphql.png" alt="logo-graphql" width="50px" height="60px">
-                                                            
-                                                    </div>
-
-                                            </div>   
-
-                                    </div>
-
-                                    <div class="softskills">
-                                            <div class="tite-softskills">
-                                                <h4 class="h4-sixieme-bloc">softskills</h4>
-                                            </div>
-
-                                            <ol class="caneva-softskills">
-                                                <li>Méthodologie agile (SCRUM)</li>
-                                                <li>Travail en équipe</li>
-                                                <li>Habitude du télé-travail</li>
-                                                <li>Gestion du temps</li>
-                                                <li>Pair programming</li>
-                                            </ol>
-                                    </div>
-                             </div>
-                      </div>
-            </section>
-
-            <!--FIN DE LA SIXIEME SECTION DE LA PAGE-->
-
-
-            <!--DEBUT DE LA SEPTIEME SECTION DE LA PAGE-->
+                <h1 id="titre_bloc_6">Notre expertise</h1>
+                <div id="bloc6">
+                    <div id="bloc_hardskills">
+                        <h2 id="titre_hardskills">Hardskills</h2>
+                        <div id="conteneur_expertise">
+                            <div class="chaque_expertise">
+                                <img src="images/" alt="logo html" class="expertise">
+                                <p>HTML</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/css.svg" alt="logo css" class="expertise">
+                                <p>CSS</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/php.svg" alt="logo php" class="expertise">
+                                <p>PHP</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/laravel.svg" alt="logo laravel" class="expertise">
+                                <p>Laravel</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/nodejs.svg" alt="logo nodejs" class="expertise">
+                                <p>Node.Js</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/javascript.svg" alt="logo javascript" class="expertise">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/vuejs.svg" alt="logo vuejs" class="expertise">
+                                <p>Vue.Js</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/reactjs.svg" alt="logo react" class="expertise">
+                                <p>React</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/mysql.svg" alt="logo mysql" class="expertise">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="images/mongodb.svg" alt="logo mongodb" class="expertise">
+                                <p>MongoDB</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="Ressources/neo4j.svg" alt="logo neo4j" class="expertise">
+                                <p>logo_neo4j</p>
+                            </div>
+                            <div class="chaque_expertise">
+                                <img src="Ressources/graphql.svg" alt="logo graphql" class="expertise">
+                                <p>GraphQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bloc_softskills">
+                        <h2 id="titre_softskills">Soft Skills</h2>
+                        <div id="conteneur_list">
+                            <ol>
+                                <li>Méthodologie agile (SCRUM)</li>
+                                <li>Travail en équipe</li>
+                                <li>Habitude du télé-travail</li>
+                                <li>Gestion du temps</li>
+                                <li>Pair programming</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section> <!--FIN DE LA SIXIEME SECTION DE LA PAGE--><!--DEBUT DE LA SEPTIEME SECTION DE LA PAGE-->
+            <section>
+                <div id="septieme-bloc">
+                    <h2 class="h2-septieme-section">Prêt ?</h2>
+                    <div class="icones-7">
+                        <div class="bloc">
+                            <div class="icone-fleche">
+                                <img src="Fichiers/illustrations/call.png" alt="pictogramme-call" class="icone">
+                                <img src="Fichiers/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche ">
+                            </div>                                        
+                            <p>Appel d’introduction</p>
+                        </div>
+                        <div class="bloc">
+                            <div class="icone-fleche">
+                                <img src="Fichiers/illustrations/users.png" alt="pictogramme-call" class="icone">
+                                <img src="Fichiers/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche">
+                            </div>                                        
+                            <p>Proposition de profils</p>
+                        </div>
+                        <div class="bloc">
+                            <div class="icone-fleche">
+                                <img src="Fichiers/illustrations/call.png" alt="pictogramme-call" class="icone">
+                                <img src="Fichiers/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche" >
+                                </div>                                        
+                                <p>Interviews vidéo</p>
+                            </div>
+                            <div class="bloc">
+                                <div class="icone-fleche">
+                                <img src="Fichiers/illustrations/user_group.png" alt="pictogramme-call" class="icone">
+                                </div>                                        
+                                <p>Onboarding</p>
+                            </div>
+                        </div>
+                        <div class="button-plannifier-appel">
+                            <button>plannifier un appel</button>
+                        </div>
+                    </div>
+                </div>       
+            </section><!--FIN DE LA SEPTIEME SECTION --><!--DEBUT DE LA HUITIEME SECTION-->
+            <section id="huitieme-section">
+                <div class="partie-superieure">
+                    <div class="zone-de-texte">
+                        <h1 class="h1-huitieme-section">Nous créons de l’<span>emploi de qualité</span> en République Démocratique du Congo</h1>
+                        <p>Nous sommes fiers de vous proposer un service de qualité qui permet de créer des emplois pour les talents de la RDC tout en offrant une formation d’excellence à de nouveaux jeunes 
+                        développeurs chaque année</p>
+                    </div>
+                    <div class="zone-images">
+                        <div class="carriere-kd">
+                            <img src="Fichiers/illustrations/salary.png" alt="revenu du travail" class="icones-8"width="50px" height="50px">
+                            <h2 class="h2-huitieme-section">Rémunération ultra compétitive </h2>
+                            <p>Un salaire 5x supérieur au <br> moyen de la RDC.</p>
+                        </div>
+                        <div class="carriere-kd">    
+                            <img src="Fichiers/illustrations/working.png" alt="attitude au travail" class="icones-8" width="50px" height="50px">
+                            <h2 class="h2-huitieme-section">Infrastructure pro</h2>
+                            <p>Un environnement de <br> travail de haute qualité avec <br> Internet haut débit et une cantine offerte.</p>
+                        </div>            
+                    </div>
+                </div>
+                <div class="partie-inferieure">
+                    <div class="zone-de-texte">
+                        <img src="Fichiers/students.png" alt="apprenants-kda" class="icones-8" width="570" height="212.5">   
+                    </div>
+                    <div class="zone-images">
+                        <div class="carriere-kd">
+                            <img src="Fichiers/illustrations/health.png" alt="assurance santé" class="icones-8" width="50px" height="50px">
+                            <h2 class="h2-huitieme-section">Couverture santé</h2>
+                            <p>Une couverture santé pour <br>développeur et sa famille <br>le meilleur hôpital de <br>Kinshasa</p>
+                        </div>
+                        <div class="carriere-kd">
+                            <img src="Fichiers/illustrations/training.png" alt="formation continue" class="icones-8" width="50px" height="50px"> 
+                            <h2 class="h2-huitieme-section">Formation continue</h2>
+                            <p>Via la KDA et des mentors <br>de renommée mondiale de <br>, Microsoft, Adobe <br>& Google.</p>                              
+                        </div>
+                    </div>
+                </div>
+            </section><!--FIN DE LA HUITIEME SECTION--><!--DEBUT DE LA NEUVIEME SECTION-->
+            <section id="sectio-10">
+                <h1 class="h1-neuvieme-section">Kinshasa Digital dans les médias</h2>
+                <div class="logo-neuvieme-section">
+                    <img src="images/medias/jeuneafr.png" alt="logo de jeuneafrique" width="110px" height="30px">
+                    <img src="images/medias/detijd.png" alt="logo de detijd" width="50px" height="30px" >
+                    <img src="images/medias/frb.png" alt="logo de frb">
+                    <img src="images/medias/gsma.png" alt="logo de gsma">
+                    <img src="images/medias/digitalafr.png" alt="logo de digitalfr">
+                </div>
+            </section><!--FIN DE LA NEUVIEME SECTION--><!--DEBUT DE LA DIXIEME SECTION-->
+            <section>
+                <div class="bloc10">
+                    <h1 class="h1-dixieme-section">Ils nous soutiennent</h1>
+                    <div class="Grands-sponsors">
+                        <div class="evenements">
+                            <img src="images/Ils nous soutiennent/kda-avec-le-president-felix-antoine-tshisekedi.jpg" alt="soutien du president de la republique à la kda">   
+                            <p>Présentation au <span>Pésident Félix <br>Antoine Tshisekedi </span>et soutien de <br>la Présidence.</p>
+                        </div>
+                        <div class="evenements">
+                            <img src="images/Ils nous soutiennent/kda-avec-le-premier-ministre-belge.jpg" alt="soutien du premier ministre à la kd">
+                            <p>Visite du Premier Ministre Belge<br><span>Alexander De Croo.</span></p>
+                        </div>
+                        <div class="evenements">
+                            <img src="images/Ils nous soutiennent/kda-avec-l-ambassadeur-de-france.jpg" alt="soutien de l'ambassadeur de la france à la kda">
+                            <p>Soutien de l'Ambassadeur de <br> France <span>François Pujolas.</span></p>
+                        </div>                        
+                        <div class="evenements">
+                            <img src="images/Ils nous soutiennent/kda-avec-facebook.jpg" alt="visite de facebook à la kda">
+                            <p>visite de <span>Aïda Ndiayede </span><br>facebooks</p>
+                        </div>
+                    </div>
+                    <div class="photo-quadruple">
+                        <div class="quadruple">
+                            <blockquote class="twitter-tweet"><p lang="nl" dir="ltr">🇧🇪🇨🇩Ochtendlijk bezoek aan nieuwe <a href="https://twitter.com/KinshasaDigital?ref_src=twsrc%5Etfw">@KinshasaDigital</a> Academy. 
+                                <br><br>Hier ging vorige week eerste groep jongeren van start met intensieve coding opleiding. Digitale transformatie ook voor <a href="https://twitter.com/hashtag/DRC?src=hash&amp;ref_src=twsrc%5Etfw">#DRC</a> bron van kansen en groei. 
+                                <a href="https://t.co/IFBla5uCpJ">pic.twitter.com/IFBla5uCpJ</a></p>&mdash; Alexander De Croo (@alexanderdecroo) <a href="https://twitter.com/alexanderdecroo/status/1225325626791530496?ref_src=twsrc%5Etfw">February 6, 2020</a></blockquote> 
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="quadruple">
+                            <blockquote class="twitter-tweet"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/LaFranceenRDCongo?src=hash&amp;ref_src=twsrc%5Etfw">#LaFranceenRDCongo</a> 
+                            <a href="https://twitter.com/hashtag/Kinshasa?src=hash&amp;ref_src=twsrc%5Etfw">#Kinshasa</a> <a href="https://twitter.com/hashtag/RDC?src=hash&amp;ref_src=twsrc%5Etfw">#RDC</a> <a href="https://twitter.com/hashtag/numerique?src=hash&amp;ref_src=twsrc%5Etfw">#numerique</a>
+                            <br><br>Inauguration de la Kinshasa Digital Academy le 31/01/2020 par S.E.M. François Pujolas, ambassadeur de France en RDC.<a href="https://t.co/VGueahjduY">https://t.co/VGueahjduY</a> <a href="https://t.co/yPaUsGXPca">pic.twitter.com/yPaUsGXPca</a>
+                            </p>&mdash; France en R.D.Congo (@AmbaFranceRDC) <a href="https://twitter.com/AmbaFranceRDC/status/1224272491503333378?ref_src=twsrc%5Etfw">February 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="quadruple">
+                            <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Grâce à leur appui <a href="https://twitter.com/hashtag/num%C3%A9rique?src=hash&amp;ref_src=twsrc%5Etfw">#numérique</a>, ma collaboration avec <a href="https://twitter.com/KinshasaDigital?ref_src=twsrc%5Etfw">@KinshasaDigital</a> permettra aux populations en 
+                            <a href="https://twitter.com/hashtag/danger?src=hash&amp;ref_src=twsrc%5Etfw">#danger</a> d&#39;alerter les autorités et aux <a href="https://twitter.com/hashtag/victimes?src=hash&amp;ref_src=twsrc%5Etfw">#victimes</a> de <a href="https://twitter.com/hashtag/VBG?src=hash&amp;ref_src=twsrc%5Etfw">#VBG</a> d&#39;être redirigées vers des structures d&#39;accompagnement appropriées. On pourra prévoir les vagues de <a href="https://twitter.com/hashtag/VBG?src=hash&amp;ref_src=twsrc%5Etfw">#VBG</a> et les contrecarrer <a href="https://t.co/G46BFg9d3n">pic.twitter.com/G46BFg9d3n</a></p>&mdash; Conseillère Spéciale Chantal Yelu Mulop (@SpecialeYelu) <a href="https://twitter.com/SpecialeYelu/status/1289215838373974019?ref_src=twsrc%5Etfw">July 31, 2020</a></blockquote> 
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div class="quadruple">
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Kinshasa is one of my favorite city in the word because it’s the place where people and organizations like <a href="https://twitter.com/KinshasaDigital?ref_src=twsrc%5Etfw">@KinshasaDigital</a>
+                            beat the wildest odds and make dreams come true. I was so honored to meet the futur leaders of the African tech industry at the Kinshasa Digital Academy <a href="https://t.co/3yZMAOiz6a">pic.twitter.com/3yZMAOiz6a</a></p>&mdash; Aïda Ndiaye (@andiaye_) 
+                            <a href="https://twitter.com/andiaye_/status/1221417758736470016?ref_src=twsrc%5Etfw">January 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>   
+                </div>
+            </section><!--FIN DE LA DIXIEME SECTION--><!--DEBUT DE LA ONZIEME SECTION-->
 
             <section>
-                 
-                      <div id="septieme-bloc">
-
-                                <h2 class="h2-septieme-section">Prêt ?</h2>
-
-                                <div class="icones-7">
-
-                                    <div class="bloc">
-                                        <div class="icone-fleche">
-                                            <img src="images/illustrations/call.png" alt="pictogramme-call">
-                                            <img src="images/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche ">
-                                        </div>                                        
-                                        <p>Appel d’introduction</p>
-                                    </div>
-                                    <div class="bloc">
-                                        <div class="icone-fleche">
-                                            <img src="images/illustrations/users.png" alt="pictogramme-call">
-                                            <img src="images/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche">
-                                        </div>                                        
-                                        <p>Inteerviews video</p>
-                                    </div>
-                                    <div class="bloc">
-                                        <div class="icone-fleche">
-                                            <img src="images/illustrations/users.png" alt="pictogramme-call">
-                                            <img src="images/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche" >
-                                        </div>                                        
-                                        <p>Inteerviews video</p>
-                                    </div>
-                                    <div class="bloc">
-                                        <div class="icone-fleche">
-                                            <img src="images/illustrations/users.png" alt="pictogramme-call">
-                                            <img src="images/illustrations/arrow.png" alt="pictogramme-fleche" class="fleche" >
-                                        </div>                                        
-                                        <p>Inteerviews video</p>
-                                    </div>
-
+                <div id="bloc11">
+                    <form class="formulaire">
+                        <div>
+                            <h1 class="titre-bloc11">Formulaire de contact</h1>
+                        </div>
+                        <div class="header">
+                            Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <span class="span11">formulaire de préinscription</span>.
+                        </div>
+                            <div class="wrapper">
+                                <div class="flanc-gauche">
+                                    <div class="premier-select">
+                                        <div class="customers-choice">
+                                            <label for="enfants">Quel titre vous décrit le mieux ?</label>
+                                        </div>
+                                        <div>
+                                            <select  class="taille-label" name="demande" id="demande">
+                                                <option value="profession"></option>
+                                                <option value="Consultant">Consultant</option>
+                                                <option value="Entrepreneur">Entrepreneur</option>
+                                                <option value="Etudiant">Etudiant</option>
+                                                <option value="Représentant d'une start-up">Représentant d'une Start-up</option>
+                                                <option value="Représentant d'une PME">Représentant d'une PME</option>
+                                                <option value="Représentant d'une grande entreprise">Représentant d'une grande entreprise</option>
+                                                <option value="Représentant d'une ONG">Représentant d'une ONG</option>
+                                                <option value="Autre">Autre</option>
+                                            </select>
+                                        </div>
+                                    </div>    
+                                    <p><input class="taille-label" type="text" placeholder="Prénom" ></p>
+                                    <p><input class="taille-label" type="text" placeholder="Nom"></p>
+                                    <p><input class="taille-label" type="text" placeholder="Téléphone"></p>
+                                    <p><input class="taille-label" type="text" placeholder="E-mail"></p>  
                                 </div>
-
-                                <div class="bouton-section-7">
-
-                                    <button>plannifier un appel</button>
+                                <div class="flanc-droit">
+                                    <div>
+                                        <div  class="customers-choice"> <label for="pays">Secteur d'activité</label></div>
+                                        <div>
+                                            <select  class="taille-label" name="demande" id="demande">
+                                                <option value="Agriculture et foresterie">Agriculture et foresterie</option>
+                                                <option value="Aéroport">Aéroport</option>
+                                                <option value="Construction">Construction</option>
+                                                <option value="Centrées de données/IT">Centrées de données / IT</option>
+                                                <option value="Exportateur">Exportateur</option>
+                                                <option value="Education">Education</option>
+                                                <option value="Gouvernement">Gouvernement</option>
+                                                <option value="Services Santé">Japon</option>
+                                                <option value="Hopital">Hopital</option>
+                                                <option value="Industrie de manufacturing">Industrie de manufacturing</option>
+                                                <option value="Militaire / Défense">Militaire / Défense</option>
+                                                <option value="Exploration minière">Exploration Minière</option>
+                                                <option value="Pétrolière">Pétrolière</option>
+                                                <option value="Location">Location</option>
+                                                <option value="Supermarché / Centre Commercial">Supermarché / Centre Commercial</option>
+                                                <option value="Télécommunication">Télécommunication</option>
+                                                <option value="Transport">Transport</option>
+                                                <option value="Traitement d'eau">Traitement d'eau</option>
+                                                <option value="Autre">Autre</option>
+                                            </select>
+                                        </div>  
+                                    </div>
+                                    <div>
+                                        <p><input  class="taille-label" type="text" placeholder="Nom de l'entreprise"></p>
+                                        <p><input  class="taille-label" type="text" placeholder="Site web"></p>
+                                        <p><input  class="taille-label" type="text" placeholder="Ville"></p>
+                                    </div> 
                                 </div>
-
-                      </div>       
-
-            </section>
-
-            <!--FIN DE LA SEPTIEME SECTION -->
-
-
-            <!--DEBUT DE LA HUITIEME SECTION-->
-
-            <section id="huitieme-section">
-
-                      <div class="partie-superieure">
-
-                                  <div class="zone-de-texte">
-                                    
-                                            <h1 class="h1-huitieme-section">Nous créons de l’<span>emploi de qualité</span> en République Démocratique du Congo</h1>
-
-                                            <p>Nous sommes fiers de vous proposer un service de qualité qui permet de créer des emplois 
-                                                pour les talents de la RDC tout en offrant une formation d’excellence à de nouveaux jeunes 
-                                                développeurs chaque année</p>
-
-                                  </div>
-
-                                  <div class="zone-images">
-
-                                        <div class="carriere-kd">
-
-                                            <img src="images/illustrations/salary.png" alt="revenu du travail" class="icones-8"width="50px" height="50px">
-                                            <h2 class="h2-huitieme-section">Rémunération ultra compétitive </h2>
-                                            <p>Un salaire 5x supérieur au 
-                                            <br> moyen de la RDC.</p>
-
-                                       </div>
-
-                                       <div class="carriere-kd">    
-
-                                            <img src="images/illustrations/working.png" alt="attitude au travail" class="icones-8" width="50px" height="50px">
-                                            <h2 class="h2-huitieme-section">Infrastructure pro</h2>
-                                            <p>Un environnement de 
-                                            <br> travail de haute qualité avec 
-                                            <br> Internet haut débit et une cantine offerte.</p>
-
-                                      </div>
-                                 
-                                 </div>
-
-                      </div>
-
-                      <div class="partie-inferieure">
-
-                                 <div class="zone-de-texte">
-                                        <img src="images/students.png" alt="apprenants-kda" class="icones-8" width="570" height="212.5">   
-                                 </div>
-
-                                 <div class="zone-images">
-
-                                      <div class="carriere-kd">
-
-                                            <img src="images/illustrations/health.png" alt="assurance santé" class="icones-8" width="50px" height="50px">
-                                            <h2 class="h2-huitieme-section">Couverture santé</h2>
-                                            <p>Une couverture santé pour
-                                            <br>développeur et sa famille 
-                                            <br>le meilleur hôpital de
-                                            <br>Kinshasa</p>
-
-                                       </div>
-
-                                       <div class="carriere-kd">
-                                            <img src="images/illustrations/training.png" alt="formation continue" class="icones-8" width="50px" height="50px"> 
-                                            <h2 class="h2-huitieme-section">Formation continue</h2>
-                                            <p>Via la KDA et des mentors 
-                                            <br>de renommée mondiale de 
-                                            <br>, Microsoft, Adobe 
-                                            <br>& Google.</p> 
-                                    
-                                      </div>
-
-                                 </div>
-
-                      </div>
-
-            </section>
-
-            <!--FIN DE LA HUITIEME SECTION-->
-
-            <!--DEBUT DE LA NEUVIEME SECTION-->
-
-            <section id="sectio-10">
-
-                    <h1 class="h1-neuvieme-section">Kinshasa Digital dans les médias</h2>
-
-                    <div class="logo-neuvieme-section">
-
-                         <img src="images/medias/jeuneafr.png" alt="logo de jeuneafrique" width="110px" height="30px">
-                         <img src="images/medias/detijd.png" alt="logo de detijd" width="50px" height="30px" >
-                         <img src="images/medias/frb.png" alt="logo de frb">
-                         <img src="images/medias/gsma.png" alt="logo de gsma">
-                         <img src="images/medias/digitalafr.png" alt="logo de digitalfr">
-
-                    </div>
-            </section>
-
-            <!--FIN DE LA NEUVIEME SECTION-->
-
-            <!--DEBUT DE LA DIXIEME SECTION-->
-
-            <section id="section-10">
-
-                    <h1 class="h1-dixieme-section">Ils nous soutiennent</h1>
-
-                    <div class="Grands-sponsors">
-
-                        <div class="paragraphe-10">
-                            <img src="images/Ils nous soutiennent/kda-avec-le-president-felix-antoine-tshisekedi.jpg" alt="soutien du president de la republique à la kda">
-                            
-                            <p>Présentation au Pésident Félix <br>Antoine Tshisekedi et soutien de <br>la Présidence.</p>
+                            </div>
+                        <div class="double-champ">
+                            <div class="double-champ1"></div>
+                                <div class="last-customers-choice">
+                                    <label for="pays">Type de demande</label><br/>
+                                </div>    
+                                <div>
+                                    <select class="taille-vaste-champ" name="demande" id="demande">
+                                        <option value="Développement: Site Internet">Developpement: Site Internet</option>
+                                        <option value="Développement: Application Mobile">Développement: Application Mobile</option>
+                                        <option value="Développement: Application de Gestion">Développement: Application de Gestion</option>
+                                        <option value="Développement: Autre demande ou autre besoin en technologie de l'information">Développement: Autre demande ou autre besoin en technologie de l'information</option>
+                                        <option value="Demande de partenariat">Demande de partenariat</option>
+                                        <option value="Evenement: Autre question">Evenement: Autre question</option>
+                                        <option value="Kinshasa Digital Academy: Demande de partenariat">Kinshasa Digital Academy: Demande de partenariat</option>
+                                        <option value="Kinshasa Digital Academy: Demande de recrutement des nos apprenants ">Kinshasa Digital Academy: Demande de recrutement des nos apprenants</option>
+                                        <option value="Kinshasa Digital Academy: Demande de renseignement concernant le programme">Kinshasa Digital Academy: Demande de renseignement concernant le programme</option>
+                                        <option value="Kinshasa Digital Academy: Soumettre un projet à impact social">Kinshasa Digital Academy: Soumettre un projet à impact social</option>
+                                        <option value="Autre">Autre</option>
+                                    </select>
+                                </div>
+                            <div>
+                                <p><input class="taille-vaste-champ"type="text" placeholder="Demande : merci d'indiquer le maximum de précision afin de qu'on puisse vous donner une reponse complète"></p>
+                            </div>
                         </div>
-
-                        <div class="paragraphe-10">
-                            <img src="images/Ils nous soutiennent/kda-avec-le-premier-ministre-belge.jpg" alt="soutien du premier ministre à la kd">
-                            <p>Visite du Premier Ministre Belge<br>Alexander De Croo.</p>
-
+                        <div class="footer11">
+                            <div class="text-footer11">
+                                <p>Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, 
+                                inscrivez-vous à l’aide du </br><span class="span11">formulaire</span>.</p>
+                                <p>Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément<br>possible</p>
+                            </div>
+                            <div>
+                                <button>Envoyer</button>
+                            </div>
                         </div>
-
-                        <div class="paragraphe-10">
-                            <img src="images/Ils nous soutiennent/kda-avec-l-ambassadeur-de-france.jpg" alt="soutien de l'ambassadeur de la france à la kda">
-                            <p>Soutien de l'Ambassadeur de <br> France François Pujolas.</p>
-
-                        </div>
-                         
-                         <div class="paragraphe-10">
-                            <img src="images/Ils nous soutiennent/kda-avec-facebook.jpg" alt="visite de facebook à la kda">
-                            <p>visite de Aïda Ndiayede <br>facebooks</p>
-
-                         </div>
-                        
-
-                    </div>
-
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
-            </section>
-
-            <!--FIN DE LA DIXIEME SECTION-->
-
-            <!--DEBUT DE LA ONZIEME SECTION-->
-
-            <section id="section-11">
                     
-                    <div class="partie-gauche">
-                        Kinshasa Digital<br>
-                        Texaf Digital Campus<br>
-                        Concession COTEX (Référence: en face de l’Ambassade de France)<br>
-                        N° 63 Avenue Colonel Mondjiba<br>
-                        Commune de Ngaliema - Kinshasa<br>
-                        République Démocratique du Congo<br>
-
-                        <a href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a><br>
-                        <a href="tel:+243 891 341 236">+243 891 341 236</a>
-
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-
+                    </form>
+                </div>  
+            </section><!--DEUXIEME SECTION-->
+            <section id="section-11">                   
+                <div class="partie-gauche">
+                    <div class="address-physique">
+                        <p><span class="span12">Kinshasa Digital</span></p>
+                        <p>Texaf Digital Campus</p>
+                        <p>Concession COTEX (Référence: en face de l’Ambassade de France)</p>
+                        <p>N° 63 Avenue Colonel Mondjiba</p>
+                        <p>Commune de Ngaliema - Kinshasa</p>
+                        <p>République Démocratique du Congo</p>   
                     </div>
-
-                    <p>Inscrivez-vous à notre newsletter pour vous tenir au courant de nos activités.</p>
-
-                    <div class="partie-droite"></div>
-
+                    <div class="address-electronique">
+                        <p><a href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a></p>
+                        <p><a href="tel:+243 891 341 236">+243 891 341 236</a></p>
                     </div>
-
+                    <footer>
+                        <img src="" alt="logo facabook">
+                        <img src="" alt="logo twitter">
+                        <img src="" alt="logo in">
+                    </footer>
+                   
+                </div>
+                <div class="partie-droite">
+                    <div class="Acces-formulaire-mono-ligne">
+                        <p>Inscrivez-vous à notre <span class="span12">newsletter</span> pour vous tenir <br>au courant de nos activités.</p>
+                    </div>
+                    <form class="formulaire-mono-ligne" action="">
+                        <div class="Adresse">
+                            <input type="text" placeholder="Adresse-Email">
+                        </div>
+                        <div class="inscription">
+                            <input type="text" placeholder="S'inscrire">
+                        </div>      
+                    </form>
+                    <footer class="footer12"><p>Mentions Légales</p></footer>
+                </div>
             </section>
-
-            <!--FIN DE LA ÀNZIEME SECTION-->
-
+          </div>
         </body>
-
     </html>
